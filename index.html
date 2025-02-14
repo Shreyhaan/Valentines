@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter to You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="envelope-container" id="envelopeContainer">
+        <div class="envelope" id="envelope"></div>
+        <button class="open-button" onclick="openLetter()">Open Me 💌</button>
+    </div>
+
+    <!-- Love Letter Section -->
+    <div class="letter-container" id="letterContainer" style="display:none;">
+        <div class="letter">
+            <p>
+                My dearest love,<br><br>
+                From the moment we met, I knew you were special. ❤️  
+                <span class="interactive" onclick="showSurprise('memory')">Remember that time at the park?</span>  
+                It was perfect because you were there.  
+            </p>
+            <p>
+                Every day with you feels like a gift.  
+                <span class="interactive" onclick="showSurprise('photo')">Look at this memory!</span>  
+            </p>
+            <p>
+                I love you more than words can say.  
+                <span class="interactive" onclick="showSurprise('funFact')">Click here to see why!</span>  
+            </p>
+            <div class="final-question">
+                <p>Will you be my Valentine? 💖</p>
+                <button class="yes-button" onclick="showYes()">Yes! 💘</button>
+                <button class="no-button" id="noButton">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surprise Popup -->
+    <div class="popup" id="popup" style="display:none;">
+        <div class="popup-content" id="popupContent"></div>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- Falling Hearts -->
+    <div class="hearts" id="heartsContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
